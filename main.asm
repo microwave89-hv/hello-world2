@@ -114,7 +114,7 @@ section .mytext
                   ; If the callee, too, were not to use the stack before or while
                   ; invoking *its* callee it could omit the alignment in a similar way.
 
-                  ; Not having to fix the align the stack alignment saves a few bytes
+                  ; Not having to fix the stack alignment saves a few bytes
                   ; of code which is why it was done here.
 
 
