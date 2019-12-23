@@ -1,0 +1,1 @@
+Only tested on this https://github.com/microwave89-hv/hw-fw-notes/blob/master/hw HW!
