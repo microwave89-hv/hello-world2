@@ -14,6 +14,7 @@
 
 
  ; derived from https://raw.githubusercontent.com/charlesap/nasm-uefi/master/yo.asm
+ ; and the compiled and linked output of hello-world2.c.
 
 BITS 64
 
@@ -115,7 +116,7 @@ section .mytext
                   ; invoking *its* callee it could omit the alignment in a similar way.
 
                   ; Not having to fix the stack alignment saves a few bytes
-                  ; of code which is why it was done here.
+                  ; of code which is why a jmp was used here.
 
 
 times 0x200 - ($-$$) int3 ; manually align the text section on a 512 byte boundary
